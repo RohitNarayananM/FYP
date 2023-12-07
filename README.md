@@ -1,6 +1,6 @@
 # FYP
 
-**Project Title.: Vulnerability Detection on Codebase using Bidirectional NLP**
+## **Project Title.: Vulnerability Detection on Codebase using Bidirectional NLP**
 
 **Team members:**
 
