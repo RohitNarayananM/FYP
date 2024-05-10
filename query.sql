@@ -1,0 +1,1 @@
+SELECT file_change_id,code_before,code_after from file_change WHERE hash IN (SELECT DISTINCT hash from fixes where cve_id IN (SELECT DISTINCT cve_id from web_cves)) AND programming_language NOT IN ('None','CSV','Markdown','Dockerfile','unknown','Batchfile','Tex','INI','XML','JSON','HTML') AND LENGTH(code_before) < 30000 AND LENGTH(code_after) < 30000 LIMIT 25000;
